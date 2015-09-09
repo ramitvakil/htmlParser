@@ -1,0 +1,400 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Really Simple HTML Email Template</title>
+<style>
+/* -------------------------------------
+		GLOBAL
+------------------------------------- */
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	font-size: 100%;
+	line-height: 1.6;
+}
+
+img {
+	max-width: 100%;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: none;
+	width: 100%!important;
+	height: 100%;
+}
+
+
+/* -------------------------------------
+		ELEMENTS
+------------------------------------- */
+a {
+	color: #348eda;
+}
+
+.btn-primary {
+	text-decoration: none;
+	color: #FFF;
+	background-color: #348eda;
+	border: solid #348eda;
+	border-width: 10px 20px;
+	line-height: 2;
+	font-weight: bold;
+	margin-right: 10px;
+	text-align: center;
+	cursor: pointer;
+	display: inline-block;
+	border-radius: 25px;
+}
+
+.btn-secondary {
+	text-decoration: none;
+	color: #FFF;
+	background-color: #aaa;
+	border: solid #aaa;
+	border-width: 10px 20px;
+	line-height: 2;
+	font-weight: bold;
+	margin-right: 10px;
+	text-align: center;
+	cursor: pointer;
+	display: inline-block;
+	border-radius: 25px;
+}
+
+.last {
+	margin-bottom: 0;
+}
+
+.first {
+	margin-top: 0;
+}
+
+.padding {
+	padding: 10px 0;
+}
+
+
+/* -------------------------------------
+		BODY
+------------------------------------- */
+table.body-wrap {
+	width: 100%;
+	padding: 20px;
+}
+
+table.body-wrap .container {
+	border: 1px solid #f0f0f0;
+}
+
+
+/* -------------------------------------
+		FOOTER
+------------------------------------- */
+table.footer-wrap {
+	width: 100%;	
+	clear: both!important;
+}
+
+.footer-wrap .container p {
+	font-size: 12px;
+	color: #666;
+	
+}
+
+table.footer-wrap a {
+	color: #999;
+}
+
+
+/* -------------------------------------
+		TYPOGRAPHY
+------------------------------------- */
+h1, h2, h3 {
+	font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	color: #000;
+	margin: 40px 0 10px;
+	line-height: 1.2;
+	font-weight: 200;
+}
+
+h1 {
+	font-size: 36px;
+}
+h2 {
+	font-size: 28px;
+}
+h3 {
+	font-size: 22px;
+}
+
+p, ul, ol {
+	margin-bottom: 10px;
+	font-weight: normal;
+	font-size: 14px;
+}
+
+ul li, ol li {
+	margin-left: 5px;
+	list-style-position: inside;
+}
+
+/* ---------------------------------------------------
+		RESPONSIVENESS
+		Nuke it from orbit. It's the only way to be sure.
+------------------------------------------------------ */
+
+/* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
+.container {
+	display: block!important;
+	max-width: 600px!important;
+	margin: 0 auto!important; /* makes it centered */
+	clear: both!important;
+}
+
+/* Set the padding on the td rather than the div for Outlook compatibility */
+.body-wrap .container {
+	padding: 20px;
+}
+
+/* This should also be a block element, so that it will fill 100% of the .container */
+.content {
+	max-width: 600px;
+	margin: 0 auto;
+	display: block;
+}
+
+/* Let's make sure tables in the content area are 100% wide */
+.content table {
+	width: 100%;
+}
+
+</style>
+</head>
+
+<body bgcolor="#f6f6f6">
+
+<!-- body -->
+<table border="0" cellpadding="0" cellspacing="0" class="tengah" width="100%">
+<tbody>
+<tr>
+	<td>
+	<table align="center" border="0" cellpadding="0" cellspacing="0" style="border: 1px solid #cccccc; font-family: Arial, Helvetica, sans-serif; font-size: 10px;" width="680">
+	<tbody>
+	<tr>
+		<td align="center" bgcolor="#3CD3EA" height="81">
+		<table align="center" border="0" cellpadding="0" cellspacing="0" width="650">
+		<tbody>
+		<tr>
+			<td align="left" bgcolor="#3CD3EA" height="73" width="124"><img alt="1" height="73" src="http://hanyaworks.com/yoko/webtes/images/register-email_03.png" width="124" /></td>
+			<td bgcolor="#3CD3EA" height="73" width="526">
+			<table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody>
+			<tr>
+				<td align="right" height="27"><a href="http://hanyaworks.com/yoko/webtes/hanyaworks.com/ishape" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#FFF; text-decoration:none;">View in a browser</a></td>
+			</tr>
+			<tr>
+				<td align="right"><img alt="2" height="27" src="http://hanyaworks.com/yoko/webtes/images/register-email_05.png" width="27" />&nbsp;&nbsp;<img alt="3" height="27" src="http://hanyaworks.com/yoko/webtes/images/register-email_07.png" width="27" />&nbsp;&nbsp;<img alt="4" height="27" src="http://hanyaworks.com/yoko/webtes/images/register-email_09.png" width="27" /></td>
+			</tr>
+			</tbody>
+			</table>
+			</td>
+		</tr>
+		</tbody>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td align="center" bgcolor="#ECECEC" height="27">
+		<table align="center" border="0" cellpadding="0" cellspacing="0" width="650">
+		<tbody>
+		<tr>
+			<td align="right" style="font-family:Arial, Helvetica, sans-serif;"><span class="menunya"><a href="http://hanyaworks.com/ishape/index.php?route=pavblog/category&amp;id=5" style="font-size:10px; color:#666; text-decoration: none;">NEWS &amp; EVENT</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://hanyaworks.com/ishape/index.php?route=information/information&amp;information_id=4" style="font-size:10px; color:#666; text-decoration: none;">ABOUT US</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://hanyaworks.com/ishape/index.php?route=pavblog/category&amp;id=4" style="font-size:10px; color:#666; text-decoration: none;">BLOG</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://hanyaworks.com/ishape/index.php?route=product/shop" style="font-size:10px; color:#666; text-decoration: none;">SHOP</a></span></td>
+		</tr>
+		</tbody>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td align="center" bgcolor="#3CD3EA" height="338" valign="top"><img alt="" height="338" src="http://hanyaworks.com/yoko/webtes/images/thxshop.png" width="621" /></td>
+	</tr>
+	<tr>
+		<td align="center" style="padding-top:25px; padding-bottom:25px;">
+		<table border="0" cellpadding="0" cellspacing="0" width="620">
+		<tbody>
+		<tr>
+			<td align="center">
+			<table border="0" cellpadding="0" cellspacing="0" width="620">
+			<tbody>
+			<tr>
+				<td align="left" height="52" style="font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#666; line-height:1.5em;" valign="top" width="433">
+				<p><span style="font-size:12px; font-weight:bold;">Your order will be delivered to:</span><br />
+				hanyayoko<br />
+				Jalan Bangka Raya No.45A<br />
+				Jakarta 17435<br />
+				08159005917</p>
+
+				<p>&nbsp;</p>
+
+				<p>&nbsp;</p>
+				</td>
+				<td align="left" style="font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#666; line-height:1.5em;" valign="top" width="187">
+				<p>Order ID : 89<br />
+				Date Added : 06/08/2014<br />
+				Status Order : Panding<br />
+				Payment : Bank Transfer</p>
+				</td>
+			</tr>
+			</tbody>
+			</table>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody>
+			<tr>
+				<td colspan="4" style="font-size:12px; font-weight:bold; font-family:Arial, Helvetica, sans-serif; color:#666;" valign="top">The following item(s) will arrive within:</td>
+			</tr>
+			<tr>
+				<td colspan="4" valign="top">
+				<hr size="0" style="color:#fff;" /></td>
+			</tr>
+			<tr>
+				<td style="font-size:11px; line-height:1.5em; font-family:Arial, Helvetica, sans-serif; " valign="top" width="25%"><span style="font-weight:bold; color:#666; ">Beauty Product</span><br />
+				<span style="color:#999; font-weight:lighter;">TP1SM<br />
+				1xRp 325,000.00<br />
+				Rp 325,000.00</span></td>
+				<td style="font-size:11px; line-height:1.5em;" width="25%"><span style="font-weight:bold; color:#666; ">Health Food Product</span><br />
+				<span style="color:#999;">Flavour: Strawberry<br />
+				TP1SM<br />
+				1xRp 325,000.00<br />
+				Rp 325,000.00</span></td>
+				<td style="font-size:11px; line-height:1.5em;" valign="top" width="25%"><span style="font-weight:bold; color:#666; ">Free Item</span><br />
+				<span style="color:#999;">Free Item<br />
+				1xRp 0.00<br />
+				Rp 0.00</span></td>
+				<td style="font-size:12px; line-height:1.5em;" width="25%">&nbsp;</td>
+			</tr>
+			</tbody>
+			</table>
+			</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td align="center" bgcolor="#C4F4F4" style="padding:10px 0 10px 0;" valign="middle">
+			<table border="0" cellpadding="0" cellspacing="0" width="600">
+			<tbody>
+			<tr>
+				<td align="left" height="52" valign="top" width="441"><span style="font-weight:bold; font-size:12px; font-family:Arial, Helvetica, sans-serif; color:#666;">Bank Transfer Instructions</span><br />
+				<span style="font-family:Arial, Helvetica, sans-serif; font-size:7px; color:#666;">Please transfer the total amount of money to the following bank account.</span><br />
+				<span style="font-weight:bold; font-size:10px; font-family:Arial, Helvetica, sans-serif; color:#666;">BNI Account : XXXXXXXXXX</span>
+				<p><span style="font-family:Arial, Helvetica, sans-serif; font-size:8px; color:#666;">Your order will be sent after we received the payment confirmation.</span></p>
+				</td>
+				<td align="left" style="font-size:11px;" valign="top" width="159">
+				<table border="0" cellpadding="0" cellspacing="0" width="100%">
+				<tbody>
+				<tr>
+					<td align="left" style="font-family:Arial, Helvetica, sans-serif; font-size:11; color:#666;  line-height:2em;" valign="top" width="46%">
+					<p>Sub Total<br />
+					Shipping</p>
+					</td>
+					<td align="left" style="font-family:Arial, Helvetica, sans-serif; font-size:11; color:#666;  line-height:2em;" valign="top" width="54%">
+					<p>{total}<br />
+					Rp.0</p>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+					<hr noshade="noshade" size="0" style="color:#fff;" /></td>
+				</tr>
+				<tr>
+					<td style=" font-family:Arial, Helvetica, sans-serif; color:#666; font-size:11px; font-weight:bold;">TOTAL</td>
+					<td style=" font-family:Arial, Helvetica, sans-serif; color:#666; font-size:14px; font-weight:bold;">Rp.2.000.000</td>
+				</tr>
+				</tbody>
+				</table>
+				</td>
+			</tr>
+			</tbody>
+			</table>
+			</td>
+		</tr>
+		</tbody>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td align="center" bgcolor="#E6E6E6" height="90">
+		<table border="0" cellpadding="0" cellspacing="0" width="650">
+		<tbody>
+		<tr>
+			<td width="151"><span style="font-size:10px; color:#666; font-weight:bold; font-family:Arial, Helvetica, sans-serif;">CONTACT US</span></td>
+			<td width="188"><span style="font-size:10px; color:#666; font-weight:bold; font-family:Arial, Helvetica, sans-serif">COSTUMER SERVICE</span></td>
+			<td width="157"><span style="font-size:10px; color:#666; font-weight:bold; font-family:Arial, Helvetica, sans-serif">SHOP FAST &amp; SAFE</span></td>
+			<td colspan="2"><span style="font-size:10px; color:#666; font-weight:bold; font-family:Arial, Helvetica, sans-serif">PAYMENT METHOD</span></td>
+		</tr>
+		<tr>
+			<td><br />
+			<span class="menufooter"><span style="font-size:10px; color:#666; font-weight:lighter; font-family:Arial, Helvetica, sans-serif;">0811 1702 140</span><br />
+			<span style="font-size:10px; color:#666; text-decoration:none; font-weight:lighter; font-family:Arial, Helvetica, sans-serif;"><a href="mailto:"><span class="menunya">info@ishapeindo.com</span></a></span></span></td>
+			<td>&nbsp;</td>
+			<td><span class="menufooter"><img alt="5" height="18" src="http://hanyaworks.com/yoko/webtes/images/pp.png" width="70" /></span></td>
+			<td width="63"><span class="menufooter"><img alt="4" height="12" src="http://hanyaworks.com/yoko/webtes/images/pp.png" width="48" /></span></td>
+			<td width="91"><span class="menufooter"><img alt="1" height="10" src="http://hanyaworks.com/yoko/webtes/images/bni.png" width="38" /></span></td>
+		</tr>
+		</tbody>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td align="center" bgcolor="#3BD4E7" height="32" style="font-family:Arial, Helvetica, sans-serif; font-size:9px; color:#FFF; text-decoration:none;">© 2014 iShape Indonesia. All Rights Reserved</td>
+	</tr>
+	</tbody>
+	</table>
+	</td>
+</tr>
+</tbody>
+</table>
+
+<!-- /body -->
+
+<!-- footer -->
+<table class="footer-wrap">
+	<tr>
+		<td></td>
+		<td class="container">
+			
+			<!-- content -->
+			<div class="content">
+				<table>
+					<tr>
+						<td align="center">
+							<p>Don't like these annoying emails? <a href="#"><unsubscribe>Unsubscribe</unsubscribe></a>.
+							</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<!-- /content -->
+			
+		</td>
+		<td></td>
+	</tr>
+</table>
+<!-- /footer -->
+
+</body>
+</html>
